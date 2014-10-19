@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Meta, title, CSS, favicons, etc. -->
+<meta charset="utf-8">
+<html>
+<head>
+<title>Capital Encounters</title>
+<link rel="stylesheet" type="text/css" href="resources/bootstrap/css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="resources/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="resources/fa/css/font-awesome.min.css">
+
+<!-- Adding roboto font -->
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+<style>
+
+body{
+	font-family: 'Roboto', sans-serif;
+	background-color: #555;
+}
+.contentBody {
+
+	background-color: #FFFFFF;
+}
+.jumboText{
+	
+	text-shadow: 2px 2px #555;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Bootstrap Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: #eee">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">@CapEncounters Recent Tweets</h4>
+      </div>
+      <div class="modal-body">
+		  <div class="container">
+
+          <a class="twitter-timeline"  href="https://twitter.com/CapEncounters" data-widget-id="523620762716868608">Tweets by @CapEncounters</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	  </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Bootstrap Modal -->	
+	
+	
+	
+<!-- NAVBAR code -->
+<nav class="navbar navbar-inverse" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!-- End Navbar -->
+<!-- JumboTron -->
+<div class="jumbotron" style="margin-top: -20px; background-image: url('img/escalators.jpg'); background-size: 100%; background-repeat: no-repeat; background-color: #555;">
+  <div class="container">
+	  <span style="color: #eee"><h1><span class="jumboText"><strong>Capital Encounters</strong></span></h1>
+	  <p class="jumboText">Home of the Capital Encounters Podcast</p></span><br><br><br><br>
+  </div>
+</div>
+<!-- end JumboTron -->
+
+<!-- Content Row -->
+<div class="row" style="background-color: #FFFFFF; margin-top: -20px">
+	
+<!-- everything is contained -->
+<div class="container">
+
+<!-- Thumbnails -->
+<div class="row" class="contentBody"><br><br>
+	
+	<!-- Print -->
+	<span style="text-align: center"><h2>Our Mission</h2></span>
+	<p style="padding: 20px; text-align: center">
+		Capital Encounters was founded after a couple friends started reading the casual encounters section of CraigsList after a night of mexican food and drinking. The idea behind this podcast to present the absurd, funny, and interesting nature of these posts. Everything on the this site and found on the Podcast was taken from a real post found on Craigslist. In all situations, identifying information, voice, name, or contact information will be omitted or changed to protect the identity of all involved.
+	</p>
+	<hr><br>
+	
+  <div class="col-sm-6 col-md-4">
+	  <div class="panel panel-default">
+	    <div class="panel-body">
+	      <i class="fa fa-4x fa-twitter"></i><hr>
+		  <p>Follow us on Twitter to keep up to date on all of the latest comings and goings.</p><br>
+		  <p>
+			 <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Recent Tweets</button>
+	  	  </p>
+	    </div>
+	  </div>
+  </div>
+  
+  <div class="col-sm-6 col-md-4">
+	  <div class="panel panel-default">
+	    <div class="panel-body">
+	      <i class="fa fa-4x fa-fire"></i><hr>
+		  <p>Use one of the links below to download the latest episode</p><br>
+		  <p>
+			  <a href="#"><button class="btn btn-primary"><i class="fa fa-magnet"></i></button></a> 
+			  <a href="#"><button class="btn btn-primary"><i class="fa fa-soundcloud"></i></button></a> 
+			  <a href="#"><button class="btn btn-primary"><i class="fa fa-download"></i></button></a>
+		  </p>
+	    </div>
+	  </div>
+  </div>
+  
+  <div class="col-sm-6 col-md-4">
+	  <div class="panel panel-default">
+	    <div class="panel-body">
+	      <i class="fa fa-4x fa-soundcloud"></i><hr>
+		  <p>Check out our SoundCloud explore previous episodes.</p><br>
+		  <p>
+			  <a href="#"><button class="btn btn-primary"><i class="fa fa-external-link"></i></button></a>
+		  </p>
+	    </div>
+	  </div>
+  </div>
+
+</div>
+<!-- End Thumbnails -->
+
+<!-- End Row -->
+<br><br>
+</div>
+
+
+<!-- End Container -->
+</div>
+
+<!-- JumboTron -->
+<div class="jumbotron" style="background-color: #555">
+  <div class="container">
+	  <p>Copyright CapitalEncounters.com 2014
+  </div>
+</div>
+<!-- end JumboTron -->
+
+<script src="resources/jquery-2.1.1.min.js"></script>
+<script src="resources/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
